@@ -12,6 +12,8 @@
                     <form method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
                         {{form|crispy}}
+                        <script src="https://www.google.com/recaptcha/api.js"></script>
+                        <div class="g-recaptcha brochure__form__captcha" data-sitekey="6LdoZbYfAAAAADa5tLANZzvDTmNu_1OhrYfK4yqt"></div>
                         <button class="btn btn-secondary">Register</button>
                    
                 </div>       
